@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>김도현 | AI Researcher & Software Engineer 포트폴리오</title>
+  <meta name="description" content="AI 연구원 및 수석 소프트웨어 엔지니어 김도현의 포트폴리오입니다. LLM, HCI, 멀티모달 연구, 논문, 경력 및 수상 경력을 소개합니다." />
+  <meta name="keywords" content="김도현, 포트폴리오, AI 연구원, 소프트웨어 엔지니어, LLM, 딥러닝, 논문, 머신러닝, 경력" />
+  <meta name="author" content="김도현 (Dohyun Kim)" />
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="김도현 | AI Researcher & Software Engineer" />
+  <meta property="og:description" content="미래 지능형 시스템과 사용자 경험의 가치를 연구하는 인공지능 연구원 김도현의 포트폴리오입니다." />
+  <meta property="og:image" content="./assets/profile.jpg" />
+
+  <!-- Google Fonts & Pretendard -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body class="dark-theme">
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress" class="scroll-progress-bar" aria-hidden="true"></div>
+
+  <!-- Background Ambient Glow Orbs -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow glow-3" aria-hidden="true"></div>
+
+  <!-- Header / Navigation -->
+  <header id="site-header" class="site-header">
+    <div class="header-container">
+      <a href="#hero" class="brand-logo" aria-label="김도현 포트폴리오 홈">
+        <span class="logo-symbol">&lt;DK /&gt;</span>
+        <span class="logo-text">Dohyun Kim</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav id="desktop-nav" class="desktop-nav" aria-label="주요 메뉴">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about" class="nav-link">자기소개</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">경력</a></li>
+          <li class="nav-item"><a href="#publications" class="nav-link">논문 &amp; 연구</a></li>
+          <li class="nav-item"><a href="#awards" class="nav-link">수상경력</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">문의하기</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#contact" class="btn btn-sm btn-outline header-cta">
+          <span>연락하기</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <button id="mobile-toggle" class="mobile-toggle-btn" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobile-nav">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div id="mobile-nav" class="mobile-nav" aria-hidden="true">
+      <div class="mobile-nav-inner">
+        <ul class="mobile-nav-list">
+          <li><a href="#about" class="mobile-nav-link"><i class="fa-solid fa-user-astronaut"></i> 자기소개</a></li>
+          <li><a href="#experience" class="mobile-nav-link"><i class="fa-solid fa-briefcase"></i> 경력</a></li>
+          <li><a href="#publications" class="mobile-nav-link"><i class="fa-solid fa-book-bookmark"></i> 논문 &amp; 연구</a></li>
+          <li><a href="#awards" class="mobile-nav-link"><i class="fa-solid fa-trophy"></i> 수상경력</a></li>
+          <li><a href="#contact" class="mobile-nav-link"><i class="fa-solid fa-envelope"></i> 문의하기</a></li>
+        </ul>
+        <div class="mobile-nav-footer">
+          <a href="#contact" class="btn btn-primary btn-block">프로젝트 문의하기</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section section-padding">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="status-badge-wrapper">
+            <span class="status-badge">
+              <span class="status-dot"></span>
+              협업 및 연구 기회에 열려 있습니다
+            </span>
+          </div>
+
+          <h1 class="hero-title">
+            지능형 AI 시스템과 <br />
+            <span class="gradient-text">사람 중심의 가치</span>를 연구합니다
+          </h1>
+
+          <p class="hero-description">
+            안녕하세요, <strong>AI 연구원 &amp; 수석 소프트웨어 엔지니어 김도현</strong>입니다. 대규모 언어 모델(LLM)의 효율적 추론, 멀티모달 상호작용 및 고신뢰성 지능 시스템 아키텍처를 연구하며 실용적인 가치로 구현합니다.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#publications" class="btn btn-primary">
+              <i class="fa-solid fa-book-open"></i>
+              <span>연구 논문 둘러보기</span>
+            </a>
+            <a href="#contact" class="btn btn-glass">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>문의 남기기</span>
+            </a>
+            <button id="cv-download-btn" class="btn btn-secondary" title="CV 다운로드">
+              <i class="fa-solid fa-file-arrow-down"></i>
+              <span>CV (이력서)</span>
+            </button>
+          </div>
+
+          <div class="hero-stats-grid">
+            <div class="stat-card">
+              <div class="stat-number">6<span class="stat-accent">+</span></div>
+              <div class="stat-label">국제 논문 발표</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">5<span class="stat-accent">+</span></div>
+              <div class="stat-label">R&amp;D 연구 경력 (년)</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">4<span class="stat-accent">회</span></div>
+              <div class="stat-label">주요 학술 및 장관상</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">1.2<span class="stat-accent">k+</span></div>
+              <div class="stat-label">Google Scholar 피인용수</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="profile-card-wrapper">
+            <div class="profile-card-glow"></div>
+            <div class="profile-card">
+              <div class="profile-img-container">
+                <img src="./assets/profile.jpg" alt="김도현 프로필 사진" class="profile-image" />
+                <div class="profile-overlay-badge">
+                  <i class="fa-solid fa-shield-halved"></i>
+                  <span>Senior AI Scientist</span>
+                </div>
+              </div>
+              <div class="profile-card-footer">
+                <div class="profile-meta">
+                  <h3 class="profile-name">김도현 <span class="profile-eng">Dohyun Kim</span></h3>
+                  <p class="profile-role">AI System Researcher &amp; Engineer</p>
+                </div>
+                <div class="profile-social-links">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub 프로필" class="social-icon-btn">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                  <a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar" class="social-icon-btn">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                  </a>
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon-btn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                  <button id="copy-email-hero-btn" class="social-icon-btn" aria-label="이메일 복사" title="이메일 복사">
+                    <i class="fa-solid fa-envelope"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Tech Badges -->
+            <div class="floating-tech-badge badge-top-right">
+              <i class="fa-solid fa-brain"></i>
+              <span>LLM &amp; Agents</span>
+            </div>
+            <div class="floating-tech-badge badge-bottom-left">
+              <i class="fa-solid fa-microchip"></i>
+              <span>High-Perf Systems</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">연구 철학과 핵심 역량</h2>
+          <p class="section-subtitle">
+            단순한 모델 학습을 넘어 실세계의 문제를 해결하는 견고하고 효율적인 지능형 소프트웨어를 구축합니다.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Bio card -->
+          <div class="about-card glass-panel bio-card">
+            <div class="card-icon-badge">
+              <i class="fa-solid fa-terminal"></i>
+            </div>
+            <h3 class="card-title">연구 비전 &amp; 배경</h3>
+            <p class="card-text">
+              대규모 언어 모델(LLM)과 멀티모달 파운데이션 모델이 실제 시스템에서 작동할 때 마주치는 <strong>추론 지연시간(Latency), 컨텍스트 압축, 리소스 효율화</strong> 문제에 깊은 관심을 두고 연구해 왔습니다.
+            </p>
+            <p class="card-text">
+              학계에서의 엄밀한 이론적 연구(Top-tier 컨퍼런스 논문 6편 게재)와 산업계에서의 실시간 고성능 프로덕션 시스템 구축 경험을 두루 갖추고 있습니다. 연구 성과가 논문에만 머물지 않고 현업에서 직접 동작하도록 엔지니어링하는 풀사이클 연구개발을 지향합니다.
+            </p>
+
+            <div class="education-block">
+              <h4 class="sub-heading"><i class="fa-solid fa-graduation-cap"></i> 학력 (Education)</h4>
+              <ul class="education-list">
+                <li class="edu-item">
+                  <div class="edu-year">2020 - 2022</div>
+                  <div class="edu-detail">
+                    <strong>한국과학기술원 (KAIST)</strong> 전산학부 석사 (M.S.)
+                    <span class="edu-lab">인공지능 &amp; 지능형 시스템 연구실 (지도교수: 박원형 교수)</span>
+                  </div>
+                </li>
+                <li class="edu-item">
+                  <div class="edu-year">2016 - 2020</div>
+                  <div class="edu-detail">
+                    <strong>한국과학기술원 (KAIST)</strong> 전산학부 학사 (B.S.)
+                    <span class="edu-lab">우등 졸업 (Magna Cum Laude)</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Research Pillars & Skills -->
+          <div class="about-side-column">
+            <!-- Research Interests -->
+            <div class="about-card glass-panel">
+              <h3 class="card-title"><i class="fa-solid fa-lightbulb"></i> 핵심 연구 분야</h3>
+              <div class="interests-grid">
+                <div class="interest-item">
+                  <div class="interest-icon"><i class="fa-solid fa-robot"></i></div>
+                  <div>
+                    <h4>LLM Reasoning &amp; Agents</h4>
+                    <p>장기 컨텍스트 추론, 계획 수립(Planning) 및 자율 에이전트 아키텍처</p>
+                  </div>
+                </div>
+                <div class="interest-item">
+                  <div class="interest-icon"><i class="fa-solid fa-bolt"></i></div>
+                  <div>
+                    <h4>Efficient Deep Learning</h4>
+                    <p>양자화(Quantization), LoRA 미세조정, 지연시간 단축 및 온디바이스 AI</p>
+                  </div>
+                </div>
+                <div class="interest-item">
+                  <div class="interest-icon"><i class="fa-solid fa-network-wired"></i></div>
+                  <div>
+                    <h4>Distributed Systems &amp; MLOps</h4>
+                    <p>대규모 분산 GPU 클러스터 훈련 최적화, vLLM/TGI 기반 서빙 파이프라인</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tech Stack Tags -->
+            <div class="about-card glass-panel">
+              <h3 class="card-title"><i class="fa-solid fa-layer-group"></i> 기술 스택 &amp; 도구</h3>
+              <div class="skills-category">
+                <span class="category-name">AI / ML:</span>
+                <div class="tags-group">
+                  <span class="skill-tag">PyTorch</span>
+                  <span class="skill-tag">HuggingFace</span>
+                  <span class="skill-tag">vLLM</span>
+                  <span class="skill-tag">LangChain</span>
+                  <span class="skill-tag">DeepSpeed</span>
+                  <span class="skill-tag">Triton</span>
+                </div>
+              </div>
+              <div class="skills-category">
+                <span class="category-name">Software &amp; Cloud:</span>
+                <div class="tags-group">
+                  <span class="skill-tag">Python</span>
+                  <span class="skill-tag">C++</span>
+                  <span class="skill-tag">TypeScript</span>
+                  <span class="skill-tag">Docker</span>
+                  <span class="skill-tag">Kubernetes</span>
+                  <span class="skill-tag">FastAPI</span>
+                  <span class="skill-tag">PostgreSQL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Career Journey</span>
+          <h2 class="section-title">연구 및 실무 경력</h2>
+          <p class="section-subtitle">
+            혁신적인 연구 과제 수행부터 수천만 사용자를 위한 엔터프라이즈 AI 서비스 개발까지의 여정입니다.
+          </p>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline-line"></div>
+
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item reveal-on-scroll">
+            <div class="timeline-marker">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-header">
+                <div>
+                  <span class="period-badge">2024.03 - 현재</span>
+                  <h3 class="job-title">선임 AI 연구원 (Senior Research Scientist)</h3>
+                  <h4 class="company-name">네오넥스트 AI 연구소 (NeoNext AI Labs) &middot; 플랫폼 연구팀</h4>
+                </div>
+                <span class="work-badge">정규직 &middot; 서울</span>
+              </div>
+              <p class="timeline-desc">
+                초거대 언어 모델 기반 자율 에이전트 프레임워크 설계 및 프로덕션 서빙 파이프라인 효율화 연구를 리딩하고 있습니다.
+              </p>
+              <ul class="achievement-list">
+                <li><strong>장문 맥락 압축 알고리즘 개발:</strong> 128k 토큰 환경에서 검색 및 추론 속도를 42% 향상시키는 KV 캐시 압축 모듈 개발 및 사내 서빙 엔진 통합</li>
+                <li><strong>LLM 기반 자율 데이터 분석 에이전트 런칭:</strong> 복잡한 SQL 쿼리 생성 및 자동 시각화 파이프라인 구축 (정확도 89.4% 달성)</li>
+                <li><strong>GPU 서빙 비용 35% 절감:</strong> vLLM 분산 추론 클러스터 및 파이프라인 병렬화 기법 도입으로 클라우드 인프라 비용 대폭 절감</li>
+              </ul>
+              <div class="tech-tags-list">
+                <span class="tag">PyTorch</span>
+                <span class="tag">vLLM</span>
+                <span class="tag">Kubernetes</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">Agentic AI</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item reveal-on-scroll">
+            <div class="timeline-marker">
+              <i class="fa-solid fa-flask"></i>
+            </div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-header">
+                <div>
+                  <span class="period-badge">2022.03 - 2024.02</span>
+                  <h3 class="job-title">AI 시스템 연구원 (AI Research Engineer)</h3>
+                  <h4 class="company-name">글로벌 딥러닝 센터 (Global Deep Learning Center) &middot; 응용지능실</h4>
+                </div>
+                <span class="work-badge">정규직 &middot; 판교</span>
+              </div>
+              <p class="timeline-desc">
+                멀티모달 표현 학습 및 효율적 미세조정(PEFT) 기술 연구를 전담하며 최상위 국제 학술대회(NeurIPS, CVPR) 논문 2편 발표를 주도했습니다.
+              </p>
+              <ul class="achievement-list">
+                <li><strong>동적 교차 어텐션 메커니즘 개발:</strong> 텍스트-이미지 간 정렬 정확도를 기존 대비 14% 개선한 아키텍처 제안 (IEEE TPAMI 저널 게재)</li>
+                <li><strong>온디바이스 미세조정 알고리즘 구축:</strong> 엣지 디바이스 환경에서 메모리 사용량을 60% 절감하는 희소 저랭크 어댑터(LoRA) 기법 개발</li>
+                <li><strong>사내 공용 딥러닝 훈련 프레임워크 기여:</strong> 분산 학습 환경에서 데이터 로더 병목 현상을 해결하여 GPU 가동률(SM Utilization) 82% 유지</li>
+              </ul>
+              <div class="tech-tags-list">
+                <span class="tag">Multimodal AI</span>
+                <span class="tag">DeepSpeed</span>
+                <span class="tag">Hugging Face</span>
+                <span class="tag">LoRA/PEFT</span>
+                <span class="tag">CUDA/C++</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="timeline-item reveal-on-scroll">
+            <div class="timeline-marker">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-header">
+                <div>
+                  <span class="period-badge">2020.09 - 2022.02</span>
+                  <h3 class="job-title">머신러닝 연구원 (ML Research Assistant)</h3>
+                  <h4 class="company-name">KAIST 인공지능 연구실 &middot; 석사과정 연구원</h4>
+                </div>
+                <span class="work-badge">연구원 &middot; 대전</span>
+              </div>
+              <p class="timeline-desc">
+                자연어 처리 및 추천 시스템 연구를 수행하며 정부 및 산학협력 연구과제(삼성전자 산학 프로젝트)에 핵심 연구원으로 참여했습니다.
+              </p>
+              <ul class="achievement-list">
+                <li><strong>개인화 추천을 위한 그래프 신경망(GNN) 연구:</strong> 대규모 소셜 그래프 상에서 사용자 행동 예측 모델 개발 (정확도 상위 1% 달성)</li>
+                <li><strong>특허 출원 2건 및 학술대회 논문 발표:</strong> 산학 프로젝트를 통해 도출된 핵심 알고리즘 국내 특허 2건 등록 완료</li>
+              </ul>
+              <div class="tech-tags-list">
+                <span class="tag">GNN</span>
+                <span class="tag">NLP</span>
+                <span class="tag">PyTorch Geometric</span>
+                <span class="tag">Graph Analytics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="publications-section section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Academic Papers</span>
+          <h2 class="section-title">논문 및 연구 성과</h2>
+          <p class="section-subtitle">
+            최상위 국제 학술대회 및 저널에 발표된 대표 연구 논문 목록입니다.
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="filter-controls">
+          <button class="filter-btn active" data-filter="all">
+            <i class="fa-solid fa-list-check"></i> 전체보기 (All)
+          </button>
+          <button class="filter-btn" data-filter="conference">
+            <i class="fa-solid fa-users"></i> 학술대회 (Conference)
+          </button>
+          <button class="filter-btn" data-filter="journal">
+            <i class="fa-solid fa-book"></i> 국제저널 (Journal)
+          </button>
+          <button class="filter-btn" data-filter="patent">
+            <i class="fa-solid fa-certificate"></i> 특허 (Patent)
+          </button>
+        </div>
+
+        <!-- Publications List -->
+        <div class="publications-grid">
+          <!-- Paper 1 -->
+          <article class="pub-card glass-panel" data-category="conference">
+            <div class="pub-card-header">
+              <div class="pub-badge-group">
+                <span class="pub-type-badge conf">ACL 2025</span>
+                <span class="pub-highlight-badge"><i class="fa-solid fa-star"></i> Oral Presentation</span>
+                <span class="pub-year">2025</span>
+              </div>
+              <span class="citation-count"><i class="fa-solid fa-quote-right"></i> 48 Citations</span>
+            </div>
+            <h3 class="pub-title">
+              Adaptive Context Compression for Long-Context Reasoning in LLM Agents
+            </h3>
+            <p class="pub-authors">
+              <strong class="author-me">Dohyun Kim</strong>, Minji Park, Sanghoon Lee, Wonhyung Park
+            </p>
+            <p class="pub-venue">
+              <em>Annual Meeting of the Association for Computational Linguistics (ACL 2025)</em>
+            </p>
+            
+            <div class="pub-abstract" id="abstract-1" aria-hidden="true">
+              <p>
+                <strong>Abstract:</strong> Large Language Models (LLMs) often suffer from severe memory footprint and latency degradation when reasoning over extended contexts (>64k tokens). In this paper, we propose <em>AdaContext</em>, an entropy-guided attention cache compression method that selectively preserves crucial reasoning traces while discarding redundant intermediate tokens. Comprehensive experiments across 8 benchmark suites demonstrate a 2.4x speedup and 46% memory reduction with virtually zero loss in reasoning fidelity.
+              </p>
+            </div>
+
+            <div class="pub-actions">
+              <button class="action-btn toggle-abstract-btn" data-target="abstract-1" aria-expanded="false">
+                <i class="fa-solid fa-chevron-down"></i> <span>초록(Abstract) 보기</span>
+              </button>
+              <a href="#" class="action-btn pdf-btn" onclick="event.preventDefault(); window.toast('PDF 파일이 곧 새 탭으로 연결됩니다.');">
+                <i class="fa-solid fa-file-pdf"></i> <span>PDF</span>
+              </a>
+              <button class="action-btn bibtex-btn" data-bibtex='@inproceedings{kim2025adaptive,
+  title={Adaptive Context Compression for Long-Context Reasoning in LLM Agents},
+  author={Kim, Dohyun and Park, Minji and Lee, Sanghoon and Park, Wonhyung},
+  booktitle={Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (ACL)},
+  year={2025}
+}'>
+                <i class="fa-solid fa-code"></i> <span>BibTeX</span>
+              </button>
+              <a href="https://doi.org" target="_blank" rel="noopener noreferrer" class="action-btn doi-btn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> <span>DOI</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Paper 2 -->
+          <article class="pub-card glass-panel" data-category="journal">
+            <div class="pub-card-header">
+              <div class="pub-badge-group">
+                <span class="pub-type-badge journal">IEEE TPAMI 2024</span>
+                <span class="pub-highlight-badge highlight-gold"><i class="fa-solid fa-crown"></i> IF: 20.8 (Q1 Top 1%)</span>
+                <span class="pub-year">2024</span>
+              </div>
+              <span class="citation-count"><i class="fa-solid fa-quote-right"></i> 112 Citations</span>
+            </div>
+            <h3 class="pub-title">
+              Multimodal Representation Learning with Dynamic Cross-Attention Mechanisms
+            </h3>
+            <p class="pub-authors">
+              <strong class="author-me">Dohyun Kim</strong>, Jinwoo Choi, Sung-Eun Kim
+            </p>
+            <p class="pub-venue">
+              <em>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), Vol. 46, No. 8, pp. 5210-5226</em>
+            </p>
+            
+            <div class="pub-abstract" id="abstract-2" aria-hidden="true">
+              <p>
+                <strong>Abstract:</strong> Aligning heterogeneous visual and linguistic representations requires flexible cross-modal grounding. We introduce DynCross, an adaptive sparse attention framework that calculates semantic affinity across modalities on the fly. The proposed framework significantly outperforms prior cross-attention baselines on VQA v2, MS-COCO Retrieval, and RefCOCO while lowering FLOPs by 34%.
+              </p>
+            </div>
+
+            <div class="pub-actions">
+              <button class="action-btn toggle-abstract-btn" data-target="abstract-2" aria-expanded="false">
+                <i class="fa-solid fa-chevron-down"></i> <span>초록(Abstract) 보기</span>
+              </button>
+              <a href="#" class="action-btn pdf-btn" onclick="event.preventDefault(); window.toast('PDF 파일이 곧 새 탭으로 연결됩니다.');">
+                <i class="fa-solid fa-file-pdf"></i> <span>PDF</span>
+              </a>
+              <button class="action-btn bibtex-btn" data-bibtex='@article{kim2024multimodal,
+  title={Multimodal Representation Learning with Dynamic Cross-Attention Mechanisms},
+  author={Kim, Dohyun and Choi, Jinwoo and Kim, Sung-Eun},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  volume={46},
+  number={8},
+  pages={5210--5226},
+  year={2024},
+  publisher={IEEE}
+}'>
+                <i class="fa-solid fa-code"></i> <span>BibTeX</span>
+              </button>
+              <a href="https://doi.org" target="_blank" rel="noopener noreferrer" class="action-btn doi-btn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> <span>DOI</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Paper 3 -->
+          <article class="pub-card glass-panel" data-category="conference">
+            <div class="pub-card-header">
+              <div class="pub-badge-group">
+                <span class="pub-type-badge conf">NeurIPS 2023</span>
+                <span class="pub-year">2023</span>
+              </div>
+              <span class="citation-count"><i class="fa-solid fa-quote-right"></i> 184 Citations</span>
+            </div>
+            <h3 class="pub-title">
+              Efficient Fine-Tuning for Edge Devices via Sparse Low-Rank Adaptation
+            </h3>
+            <p class="pub-authors">
+              Sanghoon Lee*, <strong class="author-me">Dohyun Kim*</strong> (*Co-first authors), Junho Ha, Wonhyung Park
+            </p>
+            <p class="pub-venue">
+              <em>Advances in Neural Information Processing Systems 36 (NeurIPS 2023)</em>
+            </p>
+            
+            <div class="pub-abstract" id="abstract-3" aria-hidden="true">
+              <p>
+                <strong>Abstract:</strong> Parameter-efficient fine-tuning (PEFT) has democratized adaptation of massive foundation models. However, backpropagation on edge hardware remains constrained by peak SRAM limits. We formulate SpLoRA, introducing structured sparse low-rank factors that decouple gradient tracking across layers, achieving a 58% reduction in activation memory without sacrificing downstream task accuracy.
+              </p>
+            </div>
+
+            <div class="pub-actions">
+              <button class="action-btn toggle-abstract-btn" data-target="abstract-3" aria-expanded="false">
+                <i class="fa-solid fa-chevron-down"></i> <span>초록(Abstract) 보기</span>
+              </button>
+              <a href="#" class="action-btn pdf-btn" onclick="event.preventDefault(); window.toast('PDF 파일이 곧 새 탭으로 연결됩니다.');">
+                <i class="fa-solid fa-file-pdf"></i> <span>PDF</span>
+              </a>
+              <button class="action-btn bibtex-btn" data-bibtex='@inproceedings{lee2023splora,
+  title={Efficient Fine-Tuning for Edge Devices via Sparse Low-Rank Adaptation},
+  author={Lee, Sanghoon and Kim, Dohyun and Ha, Junho and Park, Wonhyung},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+  volume={36},
+  year={2023}
+}'>
+                <i class="fa-solid fa-code"></i> <span>BibTeX</span>
+              </button>
+              <a href="https://doi.org" target="_blank" rel="noopener noreferrer" class="action-btn doi-btn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> <span>DOI</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Paper 4 -->
+          <article class="pub-card glass-panel" data-category="conference">
+            <div class="pub-card-header">
+              <div class="pub-badge-group">
+                <span class="pub-type-badge conf">CVPR 2023</span>
+                <span class="pub-year">2023</span>
+              </div>
+              <span class="citation-count"><i class="fa-solid fa-quote-right"></i> 95 Citations</span>
+            </div>
+            <h3 class="pub-title">
+              Self-Supervised Visual Prompting for Domain-Agnostic Object Segmentation
+            </h3>
+            <p class="pub-authors">
+              <strong class="author-me">Dohyun Kim</strong>, Hyeonwoo Jung, Jinwoo Choi
+            </p>
+            <p class="pub-venue">
+              <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2023)</em>
+            </p>
+            
+            <div class="pub-abstract" id="abstract-4" aria-hidden="true">
+              <p>
+                <strong>Abstract:</strong> Visual prompting offers an intuitive paradigm to steer pre-trained vision models for downstream perception. We present a self-supervised objective enabling prompt tokens to capture domain-invariant structural priors, dramatically improving zero-shot cross-domain segmentation on medical, satellite, and natural datasets.
+              </p>
+            </div>
+
+            <div class="pub-actions">
+              <button class="action-btn toggle-abstract-btn" data-target="abstract-4" aria-expanded="false">
+                <i class="fa-solid fa-chevron-down"></i> <span>초록(Abstract) 보기</span>
+              </button>
+              <a href="#" class="action-btn pdf-btn" onclick="event.preventDefault(); window.toast('PDF 파일이 곧 새 탭으로 연결됩니다.');">
+                <i class="fa-solid fa-file-pdf"></i> <span>PDF</span>
+              </a>
+              <button class="action-btn bibtex-btn" data-bibtex='@inproceedings{kim2023selfsup,
+  title={Self-Supervised Visual Prompting for Domain-Agnostic Object Segmentation},
+  author={Kim, Dohyun and Jung, Hyeonwoo and Choi, Jinwoo},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2023}
+}'>
+                <i class="fa-solid fa-code"></i> <span>BibTeX</span>
+              </button>
+              <a href="https://doi.org" target="_blank" rel="noopener noreferrer" class="action-btn doi-btn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> <span>DOI</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Patent 1 -->
+          <article class="pub-card glass-panel" data-category="patent">
+            <div class="pub-card-header">
+              <div class="pub-badge-group">
+                <span class="pub-type-badge patent">특허 등록 (Patent)</span>
+                <span class="pub-year">2024</span>
+              </div>
+              <span class="citation-count"><i class="fa-solid fa-stamp"></i> 등록번호 10-2024-0048123</span>
+            </div>
+            <h3 class="pub-title">
+              희소 어텐션 기반 초거대 언어 모델 메모리 효율화 장치 및 그 방법
+            </h3>
+            <p class="pub-authors">
+              발명자: <strong class="author-me">김도현</strong>, 박원형 (출원/등록: 대한민국 특허청)
+            </p>
+            <p class="pub-venue">
+              <em>특허 제10-2689123호 (등록일자: 2024년 06월 18일)</em>
+            </p>
+            
+            <div class="pub-abstract" id="abstract-5" aria-hidden="true">
+              <p>
+                <strong>Abstract:</strong> 본 특허는 자연어 처리 트랜스포머 모델의 셀프 어텐션 연산 시 토큰 중요도에 기반하여 연산 그래프를 동적으로 프루닝(Pruning)하고 온디바이스 메모리 대역폭 한계를 극복하는 고성능 추론 장치 및 방법에 관한 것입니다.
+              </p>
+            </div>
+
+            <div class="pub-actions">
+              <button class="action-btn toggle-abstract-btn" data-target="abstract-5" aria-expanded="false">
+                <i class="fa-solid fa-chevron-down"></i> <span>상세 내용 보기</span>
+              </button>
+              <button class="action-btn bibtex-btn" data-bibtex='@misc{kim2024patent,
+  title={Device and Method for Memory-Efficient Large Language Model Inference via Sparse Attention},
+  author={Kim, Dohyun and Park, Wonhyung},
+  year={2024},
+  month=jun,
+  note={KR Patent 10-2689123}
+}'>
+                <i class="fa-solid fa-code"></i> <span>BibTeX</span>
+              </button>
+              <a href="https://patents.google.com" target="_blank" rel="noopener noreferrer" class="action-btn doi-btn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> <span>특허 정보</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section id="awards" class="awards-section section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Honors &amp; Recognition</span>
+          <h2 class="section-title">수상 및 선정 경력</h2>
+          <p class="section-subtitle">
+            혁신적인 연구 결과와 학술 및 엔지니어링 성과로 인정받은 수상 내역입니다.
+          </p>
+        </div>
+
+        <div class="awards-grid">
+          <!-- Award 1 -->
+          <div class="award-card glass-panel award-featured">
+            <div class="award-trophy-icon trophy-gold">
+              <i class="fa-solid fa-award"></i>
+            </div>
+            <div class="award-content">
+              <div class="award-top">
+                <span class="award-year">2025.04</span>
+                <span class="award-badge gold">장관 표창</span>
+              </div>
+              <h3 class="award-title">과학기술정보통신부 장관상</h3>
+              <h4 class="award-issuer">대한민국 과학기술정보통신부 (MSIT)</h4>
+              <p class="award-desc">
+                초거대 인공지능 기반 고효율 추론 기술 개발 및 오픈소스 커뮤니티 생태계 기여 공로를 인정받아 인공지능 R&amp;D 우수 연구자 부문 장관 표창을 수상했습니다.
+              </p>
+            </div>
+          </div>
+
+          <!-- Award 2 -->
+          <div class="award-card glass-panel">
+            <div class="award-trophy-icon trophy-blue">
+              <i class="fa-solid fa-trophy"></i>
+            </div>
+            <div class="award-content">
+              <div class="award-top">
+                <span class="award-year">2024.10</span>
+                <span class="award-badge blue">Best Paper Award</span>
+              </div>
+              <h3 class="award-title">IEEE International AI Conference 최우수 논문상</h3>
+              <h4 class="award-issuer">IEEE Computer Society</h4>
+              <p class="award-desc">
+                멀티모달 표현 학습 분야에서 발표한 동적 어텐션 메커니즘 논문이 심사위원 만장일치로 전체 제출 논문 중 1위로 선정되어 수상하였습니다.
+              </p>
+            </div>
+          </div>
+
+          <!-- Award 3 -->
+          <div class="award-card glass-panel">
+            <div class="award-trophy-icon trophy-purple">
+              <i class="fa-solid fa-medal"></i>
+            </div>
+            <div class="award-content">
+              <div class="award-top">
+                <span class="award-year">2023.09</span>
+                <span class="award-badge purple">대상 (Grand Prize)</span>
+              </div>
+              <h3 class="award-title">오픈소스 AI 글로벌 챌린지 1위 대상</h3>
+              <h4 class="award-issuer">한국인공지능학회 &amp; 글로벌 빅테크 연합</h4>
+              <p class="award-desc">
+                엣지 장치용 경량화 딥러닝 미세조정 오픈소스 프로젝트(SpLoRA)를 개발하고 글로벌 오픈소스 커뮤니티에서 스타 1,500개를 달성하여 대상을 수상했습니다.
+              </p>
+            </div>
+          </div>
+
+          <!-- Award 4 -->
+          <div class="award-card glass-panel">
+            <div class="award-trophy-icon trophy-cyan">
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="award-content">
+              <div class="award-top">
+                <span class="award-year">2020.02</span>
+                <span class="award-badge cyan">학업 우수상</span>
+              </div>
+              <h3 class="award-title">KAIST 전산학부 총장장학생 우수졸업</h3>
+              <h4 class="award-issuer">한국과학기술원 (KAIST)</h4>
+              <p class="award-desc">
+                학사 재학 중 우수한 학업 성취도 및 졸업 연구 프로젝트(Graph Neural Network for Social Mining)의 학술적 우수성으로 우등 졸업 영예를 안았습니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Get in Touch</span>
+          <h2 class="section-title">문의 및 협업 제안</h2>
+          <p class="section-subtitle">
+            공동 연구, 기술 자문, 채용 제안 또는 새로운 아이디어에 대한 논의는 언제나 환영합니다.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Contact Details Card -->
+          <div class="contact-info-card glass-panel">
+            <h3 class="info-card-title">함께 흥미로운 연구와 제품을 만들어갑니다</h3>
+            <p class="info-card-desc">
+              메시지를 보내주시면 보통 <strong>24시간 이내</strong>에 신속히 회신해 드립니다. 직접 이메일로 연락하시거나 아래 폼을 작성해 주세요.
+            </p>
+
+            <div class="contact-methods-list">
+              <div class="contact-method-item">
+                <div class="method-icon"><i class="fa-regular fa-envelope"></i></div>
+                <div class="method-text">
+                  <span class="method-label">이메일 (Email)</span>
+                  <div class="copyable-email-wrapper">
+                    <span id="target-email" class="method-value">dohyun.kim.research@example.com</span>
+                    <button id="copy-email-btn" class="mini-copy-btn" title="이메일 복사" aria-label="이메일 주소 클립보드에 복사">
+                      <i class="fa-regular fa-copy"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-method-item">
+                <div class="method-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="method-text">
+                  <span class="method-label">활동 위치 (Location)</span>
+                  <span class="method-value">대한민국 서울시 강남구 &middot; 성남시 분당구</span>
+                </div>
+              </div>
+
+              <div class="contact-method-item">
+                <div class="method-icon"><i class="fa-solid fa-clock"></i></div>
+                <div class="method-text">
+                  <span class="method-label">상담 가능 시간</span>
+                  <span class="method-value">월 - 금, 09:30 - 18:30 (KST, UTC+9)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="info-social-block">
+              <span class="social-block-title">학술 및 소셜 채널</span>
+              <div class="social-buttons-row">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-tag-btn">
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer" class="social-tag-btn">
+                  <i class="fa-solid fa-graduation-cap"></i> Scholar
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-tag-btn">
+                  <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-tag-btn">
+                  <i class="fa-brands fa-x-twitter"></i> X
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Contact Form -->
+          <div class="contact-form-wrapper glass-panel">
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="sender-name" class="form-label">
+                    성함 / 기관명 <span class="required-star">*</span>
+                  </label>
+                  <div class="input-wrapper">
+                    <i class="fa-regular fa-user input-icon"></i>
+                    <input type="text" id="sender-name" name="name" class="form-input" placeholder="홍길동 (예: 한국대학교 / 기업명)" required />
+                  </div>
+                  <span class="error-msg" id="name-error">성함을 입력해 주세요.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="sender-email" class="form-label">
+                    회신받으실 이메일 <span class="required-star">*</span>
+                  </label>
+                  <div class="input-wrapper">
+                    <i class="fa-regular fa-envelope input-icon"></i>
+                    <input type="email" id="sender-email" name="email" class="form-input" placeholder="you@domain.com" required />
+                  </div>
+                  <span class="error-msg" id="email-error">올바른 이메일 주소를 입력해 주세요.</span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="inquiry-type" class="form-label">
+                    문의 유형 <span class="required-star">*</span>
+                  </label>
+                  <div class="input-wrapper">
+                    <i class="fa-solid fa-tag input-icon"></i>
+                    <select id="inquiry-type" name="inquiryType" class="form-input form-select" required>
+                      <option value="">문의 유형을 선택해 주세요</option>
+                      <option value="research">공동 연구 &amp; 프로젝트 협업</option>
+                      <option value="recruiting">채용 및 이직 제안</option>
+                      <option value="speaking">기술 강연, 세미나 및 자문</option>
+                      <option value="media">인터뷰 및 학술 질의</option>
+                      <option value="other">기타 일반 문의</option>
+                    </select>
+                  </div>
+                  <span class="error-msg" id="type-error">문의 유형을 선택해 주세요.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="inquiry-subject" class="form-label">
+                    제목 <span class="required-star">*</span>
+                  </label>
+                  <div class="input-wrapper">
+                    <i class="fa-solid fa-heading input-icon"></i>
+                    <input type="text" id="inquiry-subject" name="subject" class="form-input" placeholder="문의 제목을 간략히 작성해 주세요" required />
+                  </div>
+                  <span class="error-msg" id="subject-error">제목을 입력해 주세요.</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="inquiry-message" class="form-label">
+                  문의 내용 <span class="required-star">*</span>
+                </label>
+                <div class="input-wrapper textarea-wrapper">
+                  <i class="fa-regular fa-comment-dots input-icon textarea-icon"></i>
+                  <textarea id="inquiry-message" name="message" class="form-input form-textarea" rows="5" placeholder="제안하시고자 하는 협업 내용, 일정, 목적 등을 편하게 작성해 주세요." required></textarea>
+                </div>
+                <div class="textarea-bottom">
+                  <span class="error-msg" id="message-error">메시지 내용을 10자 이상 입력해 주세요.</span>
+                  <span class="char-counter"><span id="char-count">0</span> / 1000자</span>
+                </div>
+              </div>
+
+              <div class="form-consent">
+                <label class="custom-checkbox-container">
+                  <input type="checkbox" id="consent-check" required />
+                  <span class="checkmark"></span>
+                  <span class="consent-text">회신을 위한 이메일 및 문의 내용 수집에 동의합니다.</span>
+                </label>
+                <span class="error-msg" id="consent-error">개인정보 수집에 동의해 주셔야 문의 전송이 가능합니다.</span>
+              </div>
+
+              <button type="submit" id="submit-btn" class="btn btn-primary btn-submit">
+                <span class="btn-text">
+                  <i class="fa-solid fa-paper-plane"></i> 문의 메시지 전송하기
+                </span>
+                <span class="btn-spinner" aria-hidden="true">
+                  <i class="fa-solid fa-circle-notch fa-spin"></i> 전송 중...
+                </span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="logo-symbol">&lt;DK /&gt;</span>
+          <span class="brand-title">김도현 &middot; Dohyun Kim</span>
+          <p class="brand-subtitle">AI Researcher &amp; Senior Software Engineer</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="푸터 빠른 링크">
+          <a href="#about">자기소개</a>
+          <a href="#experience">경력</a>
+          <a href="#publications">논문</a>
+          <a href="#awards">수상경력</a>
+          <a href="#contact">문의하기</a>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; 2026 Dohyun Kim. All Rights Reserved. Crafted with modern HTML5, CSS3 &amp; Vanilla JS.
+        </p>
+        <button id="back-to-top" class="back-to-top-btn" aria-label="페이지 상단으로 이동" title="맨 위로 가기">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- Modal for BibTeX Viewing -->
+  <div id="bibtex-modal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-labelledby="bibtex-modal-title">
+    <div class="modal-box glass-panel">
+      <div class="modal-header">
+        <h3 id="bibtex-modal-title" class="modal-title"><i class="fa-solid fa-code"></i> BibTeX 인용 정보</h3>
+        <button id="close-modal-btn" class="modal-close-btn" aria-label="모달 닫기">&times;</button>
+      </div>
+      <div class="modal-body">
+        <pre><code id="bibtex-code-content" class="bibtex-code"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <button id="modal-copy-btn" class="btn btn-primary btn-sm">
+          <i class="fa-regular fa-copy"></i> <span>클립보드에 복사</span>
+        </button>
+        <button id="modal-close-action-btn" class="btn btn-glass btn-sm">닫기</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script src="./script.js"></script>
+</body>
+</html>
