@@ -11,7 +11,7 @@ foreach ($filePath in $files) {
         $text = $text.Replace("김도현", "이강신")
         $text = $text.Replace("Dohyun Kim", "Gangshin Lee")
         $text = $text.Replace("Kim, Dohyun", "Lee, Gangshin")
-        $text = $text.Replace("dohyun.kim.research@example.com", "gangshin.lee.research@example.com")
+        $text = $text.Replace("dohyun.kim.research@example.com", "otter1212@gmail.com")
         $text = $text.Replace("&lt;DK /&gt;", "&lt;GL /&gt;")
         $text = $text.Replace("kim2025adaptive", "lee2025adaptive")
         $text = $text.Replace("kim2024multimodal", "lee2024multimodal")
