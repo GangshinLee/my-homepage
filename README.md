@@ -1,4 +1,4 @@
-# 🌟 김도현 (Dohyun Kim) - Portfolio Landing Page
+# 🌟 이강신 (Gangshin Lee) - Portfolio Landing Page
 
 > 반응형 HTML5 / CSS3 / Vanilla JavaScript 기반의 모던 다크 모드 포트폴리오 랜딩 페이지입니다.  
 > 인공지능 연구원 & 수석 소프트웨어 엔지니어의 프로필, 경력, 연구 논문, 수상 내역 및 인터랙티브 문의 폼을 제공합니다.

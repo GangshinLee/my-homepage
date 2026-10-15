@@ -1,5 +1,5 @@
 /**
- * Dohyun Kim Portfolio - Interactive Logic & UI Interactions
+ * Gangshin Lee Portfolio - Interactive Logic & UI Interactions
  * Pure Vanilla JavaScript (Modern ES6+)
  */
 
@@ -323,7 +323,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // --------------------------------------------------------------------------
   // 9. Email Copy Buttons
   // --------------------------------------------------------------------------
-  const emailAddress = 'dohyun.kim.research@example.com';
+  const emailAddress = 'gangshin.lee.research@example.com';
 
   if (copyEmailHeroBtn) {
     copyEmailHeroBtn.addEventListener('click', () => {
@@ -338,11 +338,11 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // --------------------------------------------------------------------------
-  // 10. CV Download Simulation
+  // 10. CV Download Event
   // --------------------------------------------------------------------------
   if (cvDownloadBtn) {
     cvDownloadBtn.addEventListener('click', () => {
-      window.toast('최신 이력서(CV) PDF 다운로드가 준비 중입니다. 문의 폼으로 요청해 주시면 바로 송부드립니다.', 'info', 4500);
+      window.toast('이력서(Gangshin_Lee_Resume_Abstract.docx) 다운로드가 시작되었습니다.', 'success', 3500);
     });
   }
 
