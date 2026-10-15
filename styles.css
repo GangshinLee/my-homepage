@@ -2337,3 +2337,497 @@ body {
     align-items: flex-start;
   }
 }
+
+/* ==========================================================================
+   Additional Sections: Advisory Grid, Credentials Box, Edu & Teaching
+   ========================================================================== */
+.advisory-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.advisory-card {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  padding: 1.75rem;
+  border-radius: 1rem;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.advisory-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(56, 189, 248, 0.4);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.advisory-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  background: rgba(56, 189, 248, 0.1);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  color: #38bdf8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  flex-shrink: 0;
+}
+
+.advisory-meta h4 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #f8fafc;
+  margin: 0.25rem 0;
+}
+
+.adv-period {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #38bdf8;
+  background: rgba(56, 189, 248, 0.08);
+  padding: 0.15rem 0.6rem;
+  border-radius: 20px;
+  border: 1px solid rgba(56, 189, 248, 0.2);
+}
+
+.adv-role {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #a5b4fc;
+  margin-bottom: 0.4rem;
+}
+
+.adv-desc {
+  font-size: 0.88rem;
+  color: #94a3b8;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Credentials Box */
+.credentials-box {
+  margin-top: 2.5rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.credentials-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  color: #f8fafc;
+}
+
+.credentials-header i {
+  font-size: 1.5rem;
+  color: #38bdf8;
+}
+
+.credentials-header h3 {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.credentials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.cred-item {
+  padding: 1.25rem;
+  background: rgba(15, 23, 42, 0.5);
+  border-radius: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.cred-label {
+  display: block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #38bdf8;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.cred-item p {
+  margin: 0.25rem 0;
+  font-size: 0.95rem;
+  color: #cbd5e1;
+}
+
+.cred-sub {
+  font-size: 0.82rem !important;
+  color: #64748b !important;
+}
+
+/* Education timeline inside about grid */
+.edu-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.edu-item {
+  position: relative;
+  padding-left: 1.25rem;
+  border-left: 2px solid rgba(56, 189, 248, 0.3);
+}
+
+.edu-year {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #38bdf8;
+}
+
+.edu-info h4 {
+  font-size: 1rem;
+  color: #f1f5f9;
+  margin: 0.2rem 0;
+}
+
+.edu-school {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  margin: 0;
+}
+
+.edu-thesis {
+  font-size: 0.82rem;
+  color: #cbd5e1;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  margin-top: 0.4rem;
+  border-left: 3px solid #6366f1;
+}
+
+/* Teaching items */
+.teaching-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.teaching-item {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem 1rem;
+  background: rgba(15, 23, 42, 0.4);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.teach-period {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #38bdf8;
+  margin-bottom: 0.2rem;
+}
+
+.teach-desc {
+  font-size: 0.92rem;
+  color: #e2e8f0;
+}
+
+/* ==========================================================================
+   Executive Leadership Showcase & Book Spotlight
+   ========================================================================== */
+.brand-seal-icon {
+  font-size: 1.15rem;
+  color: #38bdf8;
+  margin-right: 0.4rem;
+}
+
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.exec-card {
+  position: relative;
+  padding: 2rem;
+  border-radius: 1.25rem;
+  background: rgba(16, 24, 40, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+
+.exec-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #38bdf8, #6366f1);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.exec-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(56, 189, 248, 0.35);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4), 0 0 20px rgba(56, 189, 248, 0.12);
+}
+
+.exec-card:hover::before {
+  opacity: 1;
+}
+
+.exec-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.exec-icon-box {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: rgba(56, 189, 248, 0.1);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  color: #38bdf8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
+.exec-icon-box.purple {
+  background: rgba(168, 85, 247, 0.1);
+  border-color: rgba(168, 85, 247, 0.25);
+  color: #a855f7;
+}
+
+.exec-icon-box.emerald {
+  background: rgba(16, 185, 129, 0.1);
+  border-color: rgba(16, 185, 129, 0.25);
+  color: #10b981;
+}
+
+.exec-icon-box.amber {
+  background: rgba(245, 158, 11, 0.1);
+  border-color: rgba(245, 158, 11, 0.25);
+  color: #f59e0b;
+}
+
+.exec-period-tag {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #94a3b8;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.25rem 0.65rem;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.exec-org-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #f8fafc;
+  margin-bottom: 0.3rem;
+}
+
+.exec-c-role {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #38bdf8;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.exec-mission-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.exec-mission-list li {
+  font-size: 0.88rem;
+  color: #cbd5e1;
+  position: relative;
+  padding-left: 1.2rem;
+  line-height: 1.5;
+}
+
+.exec-mission-list li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: #38bdf8;
+  font-weight: bold;
+}
+
+/* Vision Quote Box */
+.vision-quote-box {
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.6), rgba(15, 23, 42, 0.8));
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  border-radius: 1.25rem;
+  padding: 2.25rem;
+  margin-bottom: 3rem;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.vision-quote-box i.quote-icon {
+  font-size: 2rem;
+  color: rgba(99, 102, 241, 0.4);
+  margin-bottom: 0.75rem;
+}
+
+.vision-quote-text {
+  font-size: 1.15rem;
+  color: #f1f5f9;
+  font-weight: 500;
+  line-height: 1.7;
+  font-style: italic;
+  margin: 0 0 1rem 0;
+}
+
+.vision-author {
+  font-size: 0.9rem;
+  color: #38bdf8;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Book Spotlight Section */
+.book-spotlight-wrapper {
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 2.5rem;
+  align-items: center;
+  padding: 2.5rem;
+  border-radius: 1.25rem;
+  background: linear-gradient(135deg, rgba(16, 24, 40, 0.8), rgba(26, 38, 64, 0.5));
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.4);
+}
+
+.book-3d-cover {
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  border-radius: 10px 18px 18px 10px;
+  border: 2px solid rgba(245, 158, 11, 0.5);
+  box-shadow: -8px 12px 25px rgba(0, 0, 0, 0.6), inset 12px 0 15px rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem 1.2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.book-3d-cover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), transparent);
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.book-spine-decor {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #f59e0b;
+  font-weight: 700;
+}
+
+.book-cover-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.35;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.book-cover-author {
+  font-size: 0.82rem;
+  color: #cbd5e1;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 0.6rem;
+}
+
+.book-info-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.book-tag {
+  background: rgba(245, 158, 11, 0.15);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.book-publisher {
+  font-size: 0.88rem;
+  color: #94a3b8;
+}
+
+.book-title-main {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #f8fafc;
+  margin: 0.2rem 0 0.5rem 0;
+}
+
+.book-authors-main {
+  font-size: 1rem;
+  color: #a5b4fc;
+  margin-bottom: 1rem;
+}
+
+.book-desc-text {
+  font-size: 0.95rem;
+  color: #cbd5e1;
+  line-height: 1.65;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .book-spotlight-wrapper {
+    grid-template-columns: 1fr;
+    padding: 1.75rem;
+    gap: 1.5rem;
+  }
+  .book-3d-cover {
+    height: 240px;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+}
+
+

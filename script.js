@@ -455,7 +455,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // 12. Reveal Elements on Scroll (Intersection Observer)
   // --------------------------------------------------------------------------
   const revealElements = document.querySelectorAll(
-    '.timeline-item, .pub-card, .award-card, .about-card, .contact-info-card, .contact-form-wrapper'
+    '.timeline-item, .pub-card, .award-card, .about-card, .contact-info-card, .contact-form-wrapper, .advisory-card, .credentials-box'
   );
 
   revealElements.forEach((el) => el.classList.add('reveal-on-scroll'));
