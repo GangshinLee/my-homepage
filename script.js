@@ -323,7 +323,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // --------------------------------------------------------------------------
   // 9. Email Copy Buttons
   // --------------------------------------------------------------------------
-  const emailAddress = 'gangshin.lee.research@example.com';
+  const emailAddress = 'otter1212@gmail.com';
 
   if (copyEmailHeroBtn) {
     copyEmailHeroBtn.addEventListener('click', () => {
